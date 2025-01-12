@@ -1,0 +1,8 @@
+﻿.img-background {
+    display: flex;
+    justify-content: center;
+    position:sticky;
+    top: 0;
+    background-color: floralwhite;
+    z-index: -1;
+}

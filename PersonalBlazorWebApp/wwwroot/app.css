@@ -2,6 +2,11 @@ html, body {
     font-family: 'Segoe UI Historic', Helvetica, Arial, sans-serif;
 }
 
+::-webkit-scrollbar {
+    width: 0;
+    background: transparent;
+}
+
 a, .btn-link {
     color: #006bb7;
 }
@@ -17,8 +22,28 @@ a, .btn-link {
 }
 
 .content {
-    padding-top: 1.1rem;
+    padding-top: 0rem;
 }
+
+.text-block {
+    display: flex;
+    justify-content: center;
+    padding-top: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.three-dimensional {
+    transform: rotateY(-8deg);
+    background-color: #FFFDF9;
+    transition: transform 1s ease 0s;
+    box-shadow: 1px -10px 10px 0px rgba(211, 211, 211, 0.5);
+    z-index: 1;
+}
+
+    .three-dimensional:hover {
+        transform: rotateY(0deg);
+    }
 
 h1:focus {
     outline: none;
