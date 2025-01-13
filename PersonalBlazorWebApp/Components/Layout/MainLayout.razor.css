@@ -54,7 +54,6 @@ main {
 
 @media (min-width: 350px) {
     .page {
-        flex-direction: row;
     }
 
     .sidebar {

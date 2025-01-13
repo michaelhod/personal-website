@@ -8,4 +8,4 @@
 
 window.addEventListener("scroll", function () {
     parallax();
-});
+}, { passive: true });
