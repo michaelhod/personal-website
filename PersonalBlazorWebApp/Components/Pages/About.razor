@@ -1,8 +1,9 @@
 ﻿@page "/"
+@inject IJSRuntime JSRuntime
 
 <PageTitle>About</PageTitle>
 
-<div class="img-background">
+<div class="img-background" id="floater">
     <img style="height: 65vh;" src="Images/SelfieNoBackgroundCrop.png" />
 </div>
 
@@ -22,4 +23,12 @@
     </div>
 </div>
 
-
+@code {
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            await JSRuntime.InvokeVoidAsync("ScrollSpeed");
+        }
+    }
+}
