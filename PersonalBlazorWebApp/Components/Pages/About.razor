@@ -3,7 +3,7 @@
 
 <PageTitle>About</PageTitle>
 
-<div class="img-background" style="position:absolute; top:0px; width:100vw; height:500px;"></div>
+<div class="img-background" style="position:fixed; top:0px; width:100vw; height:100vh;"></div>
 
 <div class="img-background" id="floater">
     <img style="height: 65vh;" src="Images/SelfieNoBackgroundCrop.webp" />
@@ -11,7 +11,7 @@
 
 <div class="three-dimensional">
     <div class="text-block">
-        <h1>Welcome!</h1>
+        <h1 style="font-family: 'Times New Roman'; font-size: 5rem; transform: rotate(-5deg)">Welcome!</h1>
     </div>
     <div class="text-block">
         <p>
@@ -24,6 +24,8 @@
         </p>
     </div>
 </div>
+
+<div>link yt, github, linkedin</div>
 
 @code {
     protected override async Task OnAfterRenderAsync(bool firstRender)
