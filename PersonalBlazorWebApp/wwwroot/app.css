@@ -35,7 +35,7 @@ a, .btn-link {
 
 .three-dimensional {
     transform: rotateY(-8deg);
-    background-color: #FFFDF9;
+    background-color: #FFFFFF;
     transition: transform 1s ease 0s;
     box-shadow: 1px -10px 10px 0px rgba(211, 211, 211, 0.5);
     z-index: 1;
