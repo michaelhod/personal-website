@@ -48,7 +48,7 @@ a, .btn-link {
 .grid-container {
     display: grid;
     grid-template-columns: auto auto auto;
-    gap: 10px;
+    gap: 15px;
     padding: 10px;
 }
 
