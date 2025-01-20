@@ -1,4 +1,4 @@
-﻿function parallax() {
+﻿/*function parallax() {
     var s = document.getElementById("floater");
     var yPos = Math.round(window.scrollY/1.1);
     if (window.innerWidth > 550) {
@@ -8,4 +8,4 @@
 
 window.addEventListener("scroll", function () {
     parallax();
-}, { passive: true });
+}, { passive: true });*/

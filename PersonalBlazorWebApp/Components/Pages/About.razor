@@ -4,15 +4,16 @@
 <PageTitle>About</PageTitle>
 
 <div class="img-background" style="position:fixed; top:0px; width:100vw; height:100vh;"></div>
+<div style="top:0px; width:100vw; height:50vh;"></div>
 
-<div class="img-background" id="floater">
+<div class="img-background" style="position:fixed; left:50%; transform: translateX(-50%); top: 50px;">
     <img style="height: 65vh;" src="Images/SelfieNoBackgroundCrop.webp" />
 </div>
 
 <div class="three-dimensional">
     <div class="grid-container" style="padding-left: 3rem; padding-right: 3rem;">
         <div style="display:flex; justify-content: center; align-items: flex-end;">
-            <h2 style="padding-top:2rem;">Michael Hodgins</h2>
+            <h2 style="padding-top:2rem; text-align:center;">Michael Hodgins</h2>
         </div>
                 
         <div class="second-column text-block">
@@ -36,6 +37,8 @@
         </div>
     </div>
 </div>
+
+<div style="width:100vw; height:5vh;"></div>
 
 @code {
     protected override async Task OnAfterRenderAsync(bool firstRender)
