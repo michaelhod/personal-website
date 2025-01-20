@@ -6,3 +6,8 @@
     background-color: floralwhite;
     z-index: -1;
 }
+
+.second-column {
+    grid-column-start: 2;
+    grid-column-end: 4;
+}

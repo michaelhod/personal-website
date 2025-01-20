@@ -33,6 +33,25 @@ a, .btn-link {
     padding-right: 2rem;
 }
 
+.spaced-block {
+    display: flex;
+    justify-content: space-around;
+}
+
+.column-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items:center;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 10px;
+    padding: 10px;
+}
+
 .three-dimensional {
     transform: rotateY(-8deg);
     background-color: #FFFFFF;
