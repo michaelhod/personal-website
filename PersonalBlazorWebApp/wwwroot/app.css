@@ -61,7 +61,7 @@ a, .btn-link {
 }
 
     .three-dimensional:hover {
-        transform: rotateY(0deg);
+        transform: rotateY(-1deg);
     }
 
 h1:focus {
