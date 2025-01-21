@@ -52,6 +52,12 @@ a, .btn-link {
     padding: 10px;
 }
 
+@media (max-width: 650px){
+    .grid-container {
+        display: block;
+    }
+}
+
 .three-dimensional {
     transform: rotateY(-8deg);
     background-color: #FFFFFF;
