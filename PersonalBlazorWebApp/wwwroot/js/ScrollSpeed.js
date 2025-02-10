@@ -1,11 +1,12 @@
-﻿/*function parallax() {
-    var s = document.getElementById("floater");
-    var yPos = Math.round(window.scrollY/1.1);
-    if (window.innerWidth > 550) {
-        s.style.top = yPos + "px";
-    }
-}
+﻿document.addEventListener("DOMContentLoaded", function () {
+    const parallax = document.getElementById("parallaxImage");
 
-window.addEventListener("scroll", function () {
-    parallax();
-}, { passive: true });*/
+    function updateParallax() {
+        let scrollOffset = window.scrollY;
+        let parallaxSpeed = 0.5;
+        parallax.style.transform = `translateY(${scrollOffset * parallaxSpeed}px)`;
+        requestAnimationFrame(updateParallax);
+    }
+
+    updateParallax();
+});
