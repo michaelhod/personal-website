@@ -2,6 +2,11 @@ html, body {
     font-family: 'Segoe UI Historic', Helvetica, Arial, sans-serif;
 }
 
+.text-title {
+    font-family: 'Times New Roman';
+    font-size: 5rem;
+}
+
 ::-webkit-scrollbar {
     width: 0;
     background: transparent;
@@ -50,6 +55,12 @@ a, .btn-link {
     grid-template-columns: auto auto auto;
     gap: 15px;
     padding: 10px;
+}
+
+.centerText {
+    display: flex;
+    text-align: center;
+    align-items: center;
 }
 
 @media (max-width: 650px){
