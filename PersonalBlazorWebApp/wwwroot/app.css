@@ -46,7 +46,7 @@ a, .btn-link {
 .column-block {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
     align-items:center;
 }
 
@@ -63,7 +63,7 @@ a, .btn-link {
     align-items: center;
 }
 
-@media (max-width: 650px){
+@media (max-width: 850px){
     .grid-container {
         display: block;
     }
