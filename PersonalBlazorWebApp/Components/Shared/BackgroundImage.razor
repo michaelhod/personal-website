@@ -1,0 +1,25 @@
+﻿<div style="z-index: -1; background-color: floralwhite; position:fixed; top:0px; width:100vw; height:100vh;"></div>
+
+<div id="parallaxImage" class="img-background">
+    <div class="centerText text-title" style="padding-left: 30px; padding-right: 30px;"> @Text </div>
+    <div style="max-height: 55vh; max-width: 100%">
+        <img style="max-height: @MaxImageHeight; max-width: 100%; padding-top:@ImageVerticalPadding; padding-bottom:@ImageVerticalPadding; padding-right:@ImageHorizontalPadding; padding-left:@ImageHorizontalPadding;" src=@ImagePath />
+    </div>
+</div>
+
+@code {
+    [Parameter]
+    public RenderFragment Text { get; set; }
+
+    [Parameter]
+    public string ImagePath { get; set; }
+
+    [Parameter]
+    public string MaxImageHeight { get; set; }
+
+    [Parameter]
+    public string ImageVerticalPadding { get; set; }
+
+    [Parameter]
+    public string ImageHorizontalPadding { get; set; }
+}
