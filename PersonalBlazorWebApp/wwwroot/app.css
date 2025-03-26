@@ -4,7 +4,7 @@ html, body {
 
 .text-title {
     font-family: 'Times New Roman';
-    font-size: 5rem;
+    font-size: clamp(2rem, 8vw, 5rem);
 }
 
 ::-webkit-scrollbar {

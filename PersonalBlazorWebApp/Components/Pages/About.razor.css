@@ -5,4 +5,5 @@
     top: 0;
     background-color: floralwhite;
     z-index: -1;
+    flex-wrap: wrap;
 }
