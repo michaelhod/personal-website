@@ -1,9 +1,9 @@
 html, body {
-    font-family: 'Segoe UI Historic', Helvetica, Arial, sans-serif;
+    font-family: Tahoma, 'Segoe UI Historic', Helvetica, Arial, sans-serif;
 }
 
 .text-title {
-    font-family: 'Times New Roman';
+    font-family: Helvetica;
     font-size: clamp(2rem, 8vw, 5rem);
 }
 
@@ -71,7 +71,7 @@ a, .btn-link {
 
 .three-dimensional {
     transform: rotateY(-8deg);
-    background-color: #FFFFFF;
+    background-color: floralwhite;
     transition: transform 1s ease 0s;
     box-shadow: 1px -3px 10px 5px rgba(211, 211, 211, 0.5);
     z-index: 1;
