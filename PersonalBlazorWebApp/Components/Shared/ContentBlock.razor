@@ -1,5 +1,7 @@
-﻿<div class="three-dimensional" style="background-color:floralwhite">
-    <div class="grid-container" style="padding-left: 3rem; padding-right: 3rem; grid-template-columns: 30% auto auto;">
+﻿@inject IJSRuntime JSRuntime
+
+<div class="three-dimensional" style="background-color:floralwhite">
+    <div class="grid-container visible-element hidden" style="padding-left: 3rem; padding-right: 3rem; grid-template-columns: 30% auto auto;">
         <div style="display:block; justify-content: center; align-items: flex-end;">
             @TitleFragment
         </div>
@@ -32,4 +34,12 @@
 
     [Parameter]
     public RenderFragment ImageFragment { get; set; }
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            await JSRuntime.InvokeVoidAsync("handleScroll");
+        }
+    }
 }
