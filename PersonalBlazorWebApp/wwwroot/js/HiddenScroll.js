@@ -1,7 +1,15 @@
 ﻿// Toggle .hidden based on scroll position
 function handleScroll() {
     const elements = document.getElementsByClassName("visible-element");
-    if (elements.length === 0) return;
+    const elementsToHide = document.getElementsByClassName("invisible-element");
+
+    for (const element of elementsToHide) {
+        if (window.scrollY === 0) {
+            element.classList.remove("hidden");
+        } else {
+            element.classList.add("hidden");
+        }
+    }
 
     for (const element of elements) {
         if (window.scrollY === 0) {

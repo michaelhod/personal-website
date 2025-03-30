@@ -1,6 +1,8 @@
 ﻿@inject IJSRuntime JSRuntime
 
 <div class="three-dimensional" style="background-color:floralwhite">
+    <div class="invisible-element text-title" style="position:absolute;width:100vw;text-align:center;padding-top:20px;padding-bottom:20px;">@IntroText</div>
+
     <div class="grid-container visible-element hidden" style="padding-left: 3rem; padding-right: 3rem; grid-template-columns: 30% auto auto;">
         <div style="display:block; justify-content: center; align-items: flex-end;">
             @TitleFragment
@@ -34,6 +36,9 @@
 
     [Parameter]
     public RenderFragment ImageFragment { get; set; }
+
+    [Parameter]
+    public RenderFragment IntroText { get; set; }
 
     protected override async Task OnAfterRenderAsync(bool firstRender)
     {
