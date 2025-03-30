@@ -34,8 +34,8 @@ a, .btn-link {
     display: flex;
     justify-content: center;
     padding-top: 1rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding-left: min(4vw,2rem);
+    padding-right: min(4vw,2rem);
 }
 
 .spaced-block {
