@@ -1,18 +1,30 @@
 ﻿@inject IJSRuntime JSRuntime
 
 <div class="three-dimensional" style="background-color:floralwhite">
-    <div class="invisible-element text-title" style="position:absolute;">
-        <div class="fadein" style="animation-delay:0.7s;">
-            @IntroText
+    @if (hiddenDiv)
+    {
+        <div class="invisible-element text-title" style="position:absolute;">
+            <div class="fadein" style="animation-delay:0.7s;">
+                @IntroText
+            </div>
         </div>
-    </div>
-    
+    }
+
     <div class="fadein" style="animation-delay:0.7s;">
-        <div class="visible-element hidden">
+        @if (hiddenDiv)
+        {
+            <div class="visible-element hidden">
+                <div class="horizontal-scroll">
+                    @Content
+                </div>
+            </div>
+        }
+        else
+        {
             <div class="horizontal-scroll">
                 @Content
             </div>
-        </div>
+        }
     </div>
 </div>
 
@@ -22,6 +34,9 @@
 
     [Parameter]
     public RenderFragment IntroText { get; set; }
+
+    [Parameter]
+    public bool hiddenDiv { get; set; }
 
     protected override async Task OnAfterRenderAsync(bool firstRender)
     {
