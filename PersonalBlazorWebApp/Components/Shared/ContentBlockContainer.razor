@@ -1,0 +1,33 @@
+﻿@inject IJSRuntime JSRuntime
+
+<div class="three-dimensional" style="background-color:floralwhite">
+    <div class="invisible-element text-title" style="position:absolute;">
+        <div class="fadein" style="animation-delay:0.7s;">
+            @IntroText
+        </div>
+    </div>
+    
+    <div class="fadein" style="animation-delay:0.7s;">
+        <div class="visible-element hidden">
+            <div class="horizontal-scroll">
+                @Content
+            </div>
+        </div>
+    </div>
+</div>
+
+@code {
+    [Parameter]
+    public RenderFragment Content { get; set; }
+
+    [Parameter]
+    public RenderFragment IntroText { get; set; }
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            await JSRuntime.InvokeVoidAsync("handleScroll");
+        }
+    }
+}

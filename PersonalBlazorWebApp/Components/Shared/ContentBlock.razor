@@ -1,54 +1,29 @@
-﻿@inject IJSRuntime JSRuntime
-
-<div class="three-dimensional" style="background-color:floralwhite">
-    <div class="invisible-element text-title" style="position:absolute;">
-        <div class="fadein" style="animation-delay:0.7s;">
-            @IntroText
+﻿<div class="flex-container">
+    <div class="grid-container" style="padding-left: 3vw; padding-right: 3vw; grid-template-columns: 30% auto auto;">
+        <div style="display:block; justify-content: center; align-items: flex-end;">
+            @TitleFragment
         </div>
-    </div>
-    
-    <div class="fadein" style="animation-delay:0.7s;">
-        <div class="grid-container visible-element hidden" style="padding-left: 3vw; padding-right: 3vw; grid-template-columns: 30% auto auto;">
-            <div style="display:block; justify-content: center; align-items: flex-end;">
-                @TitleFragment
-            </div>
 
-            <div class="second-column text-block" style="padding-top: 0px;">
-                @DescriptionTitleFragment
-            </div>
+        <div class="second-column text-block" style="padding-top: 0px;">
+            @DescriptionTitleFragment
+        </div>
 
-            <div class="column-block">
-                @ImageFragment
-            </div>
+        <div class="column-block">
+            @ImageFragment
+        </div>
 
-            <div class="text-block second-column" style="display: block;">
-                @DescriptionFragment
-            </div>
+        <div class="text-block second-column" style="display: block;">
+            @DescriptionFragment
         </div>
     </div>
 </div>
 
 @code {
-    [Parameter]
-    public RenderFragment TitleFragment { get; set; }
+    [Parameter] public RenderFragment TitleFragment { get; set; }
 
-    [Parameter]
-    public RenderFragment DescriptionTitleFragment { get; set; }
+    [Parameter] public RenderFragment DescriptionTitleFragment { get; set; }
 
-    [Parameter]
-    public RenderFragment DescriptionFragment { get; set; }
+    [Parameter] public RenderFragment DescriptionFragment { get; set; }
 
-    [Parameter]
-    public RenderFragment ImageFragment { get; set; }
-
-    [Parameter]
-    public RenderFragment IntroText { get; set; }
-
-    protected override async Task OnAfterRenderAsync(bool firstRender)
-    {
-        if (firstRender)
-        {
-            await JSRuntime.InvokeVoidAsync("handleScroll");
-        }
-    }
+    [Parameter] public RenderFragment ImageFragment { get; set; }
 }
