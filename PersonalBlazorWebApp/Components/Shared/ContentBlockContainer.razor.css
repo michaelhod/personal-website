@@ -41,7 +41,8 @@
     display: flex;
     overflow-x: scroll;
     scroll-snap-type: x mandatory;
-    align-items: center;
+    overflow-y: hidden;
+    transition: height 0.4s ease;
 }
 
 .horizontal-scroll::-webkit-scrollbar {
