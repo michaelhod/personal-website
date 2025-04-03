@@ -15,7 +15,7 @@ main {
 .topbar {
     display: flex;
     justify-content: center;
-    background-color: #FFDBBB;
+    background-color: #F6F6F6;
 }
 
 .top-row {
