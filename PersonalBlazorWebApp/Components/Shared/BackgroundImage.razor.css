@@ -1,9 +1,11 @@
 ﻿.img-background {
     display: flex;
-    justify-content: space-evenly;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     position: sticky;
     top: 55px;
-    background-color: #FFDBBB;
+    background-color: #F6F6F6;
     z-index: -1;
     flex-wrap: wrap;
 }
