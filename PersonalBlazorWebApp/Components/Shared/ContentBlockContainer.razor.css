@@ -38,11 +38,17 @@
 }
 
 .horizontal-scroll {
+    transform: scaleY(-1);
     display: flex;
     overflow-x: scroll;
     scroll-snap-type: x mandatory;
     overflow-y: hidden;
     transition: height 0.4s ease;
+}
+
+.horizontal-scroll-inner {
+    transform: scaleY(-1);
+    display: flex;
 }
 
 .horizontal-scroll::-webkit-scrollbar {
