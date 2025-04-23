@@ -56,7 +56,7 @@
 }
 
 .horizontal-scroll::-webkit-scrollbar-track {
-    background: floralwhite;
+    background: #F6F6F6;
 }
 
 .horizontal-scroll::-webkit-scrollbar-thumb {
