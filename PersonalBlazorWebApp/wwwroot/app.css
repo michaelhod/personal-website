@@ -82,8 +82,9 @@ a, .btn-link {
 }
 
 .three-dimensional {
-    background-color: #F6F6F6;
+    background-color: lightgray;
     transition: box-shadow 1s ease 0s;
+    border-top: 1px solid black;
     box-shadow: 0px -3px 10px 5px rgba(0, 0, 0, 0);
     z-index: 1;
 }
