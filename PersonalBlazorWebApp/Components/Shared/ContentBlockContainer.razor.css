@@ -8,6 +8,7 @@
     opacity: 1;
     visibility: visible;
     transition: opacity 0.4s ease-in-out 0.4s, visibility 0.4s ease-in-out 0.4s;
+    z-index: 1;
 }
 
 .hidden {
@@ -16,11 +17,12 @@
     transition: opacity 0.4s ease-in-out 0s, visibility 0.4s ease-in-out 0s;
 }
 
-@media (max-width: 650px){
-    .hidden{
+@media (max-width: 800px) {
+    .hidden {
         opacity: 1;
         visibility: visible;
     }
+
     .invisible-element {
         opacity: 0;
         visibility: hidden;
