@@ -7,3 +7,11 @@
 .photo-title{
     color:floralwhite;
 }
+
+.image1 {
+    background-image: url("/Images/PXL_20240121_132432776crop1.jpg");
+    background-attachment: fixed;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
