@@ -85,12 +85,12 @@ a, .btn-link {
     background-color: lightgray;
     transition: box-shadow 1s ease 0s;
     border-top: 1px solid black;
-    box-shadow: 0px -3px 10px 5px rgba(0, 0, 0, 0);
+    box-shadow: 0px -9px 10px 0px rgba(0, 0, 0, 0);
     z-index: 1;
 }
 
     .three-dimensional:hover {
-        box-shadow: 0px -3px 10px 5px rgba(0, 0, 0, 0.2);
+        box-shadow: 0px -9px 10px 0px rgba(0, 0, 0, 0.15);
     }
 
 h1:focus {
