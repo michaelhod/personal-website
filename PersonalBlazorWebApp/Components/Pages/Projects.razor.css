@@ -2,3 +2,46 @@
     scroll-snap-align: center;
     scroll-snap-stop: always;
 }
+
+.image-first {
+    display: inherit;
+    width: 33%;
+}
+
+.image-second {
+    display: inherit;
+    width: 33%;
+}
+
+.image-third {
+    display: inherit;
+    width: 34%;
+}
+
+@media (min-width: 850px) and (max-width: 1200px) {
+    .image-first {
+        width: 50%;
+    }
+
+    .image-second {
+        width: 50%;
+    }
+
+    .image-third {
+        display: none;
+    }
+}
+
+@media (max-width: 850px) {
+    .image-first {
+        width: 100%;
+    }
+
+    .image-second {
+        display: none;
+    }
+
+    .image-third {
+        display: none;
+    }
+}

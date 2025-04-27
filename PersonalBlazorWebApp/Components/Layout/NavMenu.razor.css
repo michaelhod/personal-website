@@ -63,7 +63,7 @@
     color: darkslategray;
 }
 
-@media (max-width: 349.98px){
+@media (max-width: 549.98px){
     .nav-item{
         width: 100vw;
         display: flex;
