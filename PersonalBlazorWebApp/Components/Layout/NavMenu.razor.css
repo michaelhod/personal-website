@@ -33,6 +33,8 @@
     font-size: 0.95rem;
     padding-bottom: 0.2rem;
     padding-top:0.2rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
 }
 
     .nav-item:first-of-type {
@@ -64,8 +66,9 @@
 }
 
 @media (max-width: 549.98px){
-    .nav-item{
-        width: 100vw;
+    .nav-item {
+        padding-left: 1rem;
+        padding-right: 1rem;
         display: flex;
         justify-content: center;
     }
